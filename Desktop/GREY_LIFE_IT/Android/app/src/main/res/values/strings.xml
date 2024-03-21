@@ -1,0 +1,69 @@
+<resources>
+<!--    <string name="app_name">Credit_Risk_Eval_Badri_v.0.1</string>-->
+    <string name="app_name">GreyLife</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="q1">How often do you make a detailed budget for your monthly expenses?</string>
+    <string name="q2">When you receive unexpected extra income, like a bonus or tax refund, what do you typically do?</string>
+    <string name="q3">How do you feel about taking on debt for major purchases, such as a car or home?</string>
+    <string name="q4">How often do you review your bank account statements and track your expenses?</string>
+    <string name="q5">hat is your attitude toward saving for retirement?</string>
+    <string name="q6">When faced with financial setbacks or unexpected expenses, what is your typical reaction?</string>
+    <string name="q7">How would you describe your risk tolerance when it comes to investments?</string>
+    <string name="q8">Do you have a history of missed or late payments on loans or credit cards?</string>
+    <string name="q9">question 9</string>
+    <string name="q10">question 10</string>
+
+    <string name="a10">Every month</string>
+    <string name="a11">Occasionally</string>
+    <string name="a12">Rarely</string>
+    <string name="a13">Never</string>
+
+    <string name="a20">A) Save it for emergencies or future goals</string>
+    <string name="a21">Spend it on non-essential items</string>
+    <string name="a22">Invest it</string>
+    <string name="a23">Pay off debts</string>
+
+    <string name="a30">I\'m comfortable with it as long as I can afford the monthly payments</string>
+    <string name="a31">I avoid taking on debt whenever possible </string>
+    <string name="a32">I prefer to pay for major purchases in cash </string>
+    <string name="a33"> I\'m willing to take on debt to get what I want</string>
+
+    <string name="a40">Every week</string>
+    <string name="a41">Once a month</string>
+    <string name="a42">Rarely</string>
+    <string name="a43">I don\'t typically review my statements</string>
+
+    <string name="a50">I actively save for retirement and have a plan in place</string>
+    <string name="a51">I save occasionally, but retirement isn\'t a top priority</string>
+    <string name="a52">I don\'t currently save for retirement</string>
+    <string name="a53">I rely on other sources of income for retirement</string>
+
+    <string name="a60">I dip into my emergency savings</string>
+    <string name="a61">I borrow money from family or friends</string>
+    <string name="a62">I use credit cards to cover the expenses</string>
+    <string name="a63">I struggle to find a solution</string>
+
+    <string name="a70">Very conservative; I prefer low-risk investments</string>
+    <string name="a71">Moderately conservative; I seek a balance between risk and reward</string>
+    <string name="a72">Moderate risk-taker; I\'m open to some investment risk</string>
+    <string name="a73">Aggressive risk-taker; I\'m willing to take on higher risks for potential returns</string>
+
+    <string name="a80">No, I\'ve never missed a payment</string>
+    <string name="a81">Yes, I\'ve missed a payment in the past</string>
+    <string name="a82">I occasionally miss payments </string>
+    <string name="a83">I frequently miss payments</string>
+
+    <string name="a90">Never</string>
+    <string name="a91">Never</string>
+    <string name="a92">Never</string>
+    <string name="a93">Never</string>
+
+    <string name="a100">Never</string>
+    <string name="a101">Never</string>
+    <string name="a102">Never</string>
+    <string name="a103">Never</string>
+
+
+</resources>

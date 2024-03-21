@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/myBackground"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/greylife"
+        android:textColor="@color/myYellow"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="GreyLife"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/greylife"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/myYellow"
+        android:layout_height="wrap_content"
+        android:text="TVS CREDIT E.P.I.C IT S5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/one"
+        android:layout_below="@id/title"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Email"
+        app:boxStrokeColor="@drawable/box_outline_selector"
+        app:hintTextColor="@color/myYellow"
+        android:textColorHint="@color/myWhite"
+        app:startIconTint="@color/myWhite"
+        app:startIconDrawable="@drawable/ic_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:textColor="@color/myYellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/two"
+        android:layout_below="@id/one"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Password"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@drawable/box_outline_selector"
+        app:hintTextColor="@color/myYellow"
+        android:textColorHint="@color/myWhite"
+        app:startIconTint="@color/myWhite"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:textColor="@color/myYellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/myYellow"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="18sp"
+        android:text="Login"/>
+
+
+            <TextView
+                android:id="@+id/tvCommon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnLogin"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="Dont have an account? "
+                android:textColor="@color/myWhite" />
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:textAlignment="center"
+        android:layout_below="@id/tvCommon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/myYellow"
+        android:text="Sign up"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

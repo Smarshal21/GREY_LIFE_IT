@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground"
+    tools:context=".activities.DocsDetailsActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Customer Details"
+            android:textColor="@color/myYellow"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_below="@id/common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/myNavBarBg"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                //---------------------
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Name"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv10"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="User Id"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv11"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Email"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv14"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Loan Type"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv12"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="SRIT Score"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv15"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/myYellow"
+                    android:textSize="15sp"
+                    android:text="No of Dependents"/>
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv1"
+                    android:textColor="@color/myWhite"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="text"/>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Income per Annum"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv2"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Loan Amount"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv16"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Loan Term"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv3"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="CIBIL Score"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv4"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Resedential Assets Value"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv5"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Commercial Assets Value"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv6"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Luxury Assets Value"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv7"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="Bank Assets Value"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv8"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="Highest Education Degree"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv9"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/myYellow"
+                        android:textSize="15sp"
+                        android:text="ML Output Status"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tv13"
+                        android:textColor="@color/myWhite"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="text"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/docs"
+                    android:layout_below="@id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Documents"
+                    android:layout_marginHorizontal="5dp"
+                    android:textColor="@color/myWhite"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_below="@id/docs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    tools:listitem="@layout/pdf_item"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvTesting"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="testing"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvbc1"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="bc1"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvbc2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="bc2"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvbc3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="bc3"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvbc4"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="bc4"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvbc5"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="bc5"/>-->
+
+        <TextView
+            android:id="@+id/tvPdf1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="pdf1"/>
+
+        <TextView
+            android:id="@+id/tvUrl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="url1"/>
+
+        <TextView
+            android:id="@+id/tvPdf2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="pdf2"/>
+
+        <TextView
+            android:id="@+id/tvUrl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="url2"/>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

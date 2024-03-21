@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--  My app themes start  -->
+
+    <color name="myGrey">#3F5964</color>
+    <color name="myTextOnGrey">#597481</color>
+    <color name="myHighlightGrey">#48555A</color>
+    <color name="myNonHighlightGrey">#233238</color>
+    <color name="myBackground">#202732</color>
+    <color name="myNavBarBg">#233238</color>
+
+    <color name="myWhite">#C6C7C9</color>
+    <color name="myYellow">#FDD962</color>
+    <color name="myGreen">#308E2D</color>
+    <color name="myRed">#8E1121</color>
+
+    <color name="x">#233238</color>
+<!--  My app themes over  -->
+
+
+</resources>

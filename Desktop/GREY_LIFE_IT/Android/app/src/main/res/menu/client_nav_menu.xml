@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/documentsScreen"
+        android:icon="@drawable/ic_homescreen"
+        android:title="Home"  />
+    <item
+        android:id="@+id/supportScreen"
+        android:icon="@drawable/ic_supportscreen"
+        android:title="Support" />
+    <item
+        android:id="@+id/statusScreen"
+        android:icon="@drawable/ic_statusscreen"
+        android:title="Status" />
+
+
+</menu>

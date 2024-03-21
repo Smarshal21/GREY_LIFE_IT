@@ -1,0 +1,13 @@
+numpy
+click
+Flask
+gunicorn
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+Werkzeug
+zipp
+xgboost
+scikit-learn
+flask_cors

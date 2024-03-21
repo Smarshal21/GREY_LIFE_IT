@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="@color/myNavBarBg"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/qNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/myWhite"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:text="1"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="@color/myNavBarBg"
+    tools:context=".fragments.BorrowerLoanDetailsFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingHorizontal="10dp"
+        android:layout_height="match_parent">
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvCommon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Details for "/>
+
+    <TextView
+        android:id="@+id/tvLoanType"
+        android:layout_toEndOf="@id/tvCommon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myYellow"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Tractor"/>
+
+    <TextView
+        android:id="@+id/tcCommon2"
+        android:layout_toEndOf="@id/tvLoanType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text=" Loan"/>
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvCommon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="No of Dependents"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNoOfDependents"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Income per Annum"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etIncomeAnnum"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Loan amount"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLoanAmount"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Loan Term"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLoanTerm"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="CIBIL Score"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCIBILScore"
+                    android:inputType="number"
+                    android:textColor="@color/myYellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Resedential Assets Value"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etResedentialAssetsValie"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Commercial Assets Value"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCommercialAssetsValue"
+                    android:textColor="@color/myYellow"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Luxury Assets Value"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLuxuryAssetsValue"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Bank Assets Value"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBankAsssetsValue"
+                    android:textColor="@color/myYellow"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Highest Education Degree"
+                app:boxStrokeColor="@drawable/box_outline_selector"
+                app:hintTextColor="@color/myYellow"
+                android:textColorHint="@color/myWhite">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEducation"
+                    android:textColor="@color/myYellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/myWhite"
+                    android:text="Aadhar Card:"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@drawable/box_outline_selector"
+                    app:hintTextColor="@color/myYellow"
+                    android:textColorHint="@color/myWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSelectPdf1"
+                        android:textColor="@color/myYellow"
+                        android:hint="Upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/myWhite"
+                    android:text="Address Proof:"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@drawable/box_outline_selector"
+                    app:hintTextColor="@color/myYellow"
+                    android:textColorHint="@color/myWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSelectPdf2"
+                        android:textColor="@color/myYellow"
+                        android:hint="Upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/myWhite"
+                    android:text="Income Proof:"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@drawable/box_outline_selector"
+                    app:hintTextColor="@color/myYellow"
+                    android:textColorHint="@color/myWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSelectPdf3"
+                        android:textColor="@color/myYellow"
+                        android:hint="Upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/myWhite"
+                    android:text="Bank Statement:"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_weight="1"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@drawable/box_outline_selector"
+                    app:hintTextColor="@color/myYellow"
+                    android:textColorHint="@color/myWhite">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSelectPdf4"
+                        android:textColor="@color/myYellow"
+                        android:hint="Upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/myYellow"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

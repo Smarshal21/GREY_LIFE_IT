@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="oval">
+            <solid android:color="#FF5733" /> <!-- Change this color to your desired circle color -->
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="oval">
+            <stroke android:width="2dp" android:color="#000000" />
+        </shape>
+    </item>
+</selector>

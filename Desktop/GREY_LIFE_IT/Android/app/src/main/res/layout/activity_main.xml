@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/myBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvLending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text="lender?"/>
+
+    <TextView
+        android:id="@+id/tvLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text="Links"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_updateDb"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="UpdateDb values"/>-->
+
+    <Button
+        android:id="@+id/btn_spare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Spare Activity - main split factor"/>
+
+    <Button
+        android:id="@+id/btn_assessment_activity"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:text="Assessment Page"/>
+
+    <Button
+        android:id="@+id/btn_home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Home Page"/>
+
+    <Button
+        android:id="@+id/btn_client_home_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Client Home Page"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:text="Logout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TVS CREDIT EPIC S5 \nGreyLife"
+        android:textColor="@color/myYellow"
+        android:textStyle="bold|italic"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myWhite"
+        android:text="loading please wait ..."/>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground"
+    tools:context=".activities.StatusScreenActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvLoanType"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/myYellow"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"
+            android:text="No Loan Applied"/>
+
+        <TextView
+            android:id="@+id/tvCommon"
+            android:layout_below="@id/tvLoanType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Your loan has been requested and its current status is -"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCommon"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/myGrey"
+            android:gravity="center"
+            android:text="Pending"
+            android:textColor="@color/myWhite"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:itemActiveIndicatorStyle="@color/myYellow"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_menu" />
+
+
+</RelativeLayout>

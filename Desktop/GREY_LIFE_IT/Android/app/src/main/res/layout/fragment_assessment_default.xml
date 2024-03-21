@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/myNavBarBg"
+    tools:context=".fragments.AssessmentDefaultFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/myYellow"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:text="Welcome to our Psychometric Test!"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/myWhite"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:text="Please provide honest answers as this is a critical step in our loan application process."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/myWhite"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:gravity="left"
+            android:text="Detecting fraud is a top priority, and we are committed to taking strict actions if any fraudulent activity is detected."
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/myWhite"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Your cooperation ensures a fair and secure loan process."
+        />
+
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

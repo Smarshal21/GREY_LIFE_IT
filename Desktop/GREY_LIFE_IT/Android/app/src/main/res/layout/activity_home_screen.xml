@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground"
+    tools:context=".activities.HomeScreenActivity">
+
+
+    <ScrollView
+        android:layout_above="@id/bottom_navigation"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Home"
+        android:visibility="gone"
+        android:textColor="@color/myWhite"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myYellow"
+        android:text="Welcome Back!"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/myWhite"
+        android:textStyle="bold"
+        android:text="Username"/>
+
+    <TextView
+        android:id="@+id/tvTestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/recyclerView"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="100"
+        android:visibility="gone"
+        android:textSize="20sp"
+        android:textColor="@color/myYellow"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnLogout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:backgroundTint="@color/myYellow"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:text="Logout"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/myYellow"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="Logout"/>
+
+    <TextView
+        android:id="@+id/srit"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/btnLogout"
+        android:layout_above="@id/recyclerView"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/myYellow"
+        android:textStyle="italic"
+        android:text="SRIT"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/rv_loan_type_item" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/fragmentContainerView"
+        android:layout_below="@id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:itemActiveIndicatorStyle="@color/myYellow"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/nav_menu" />
+
+
+</RelativeLayout>
