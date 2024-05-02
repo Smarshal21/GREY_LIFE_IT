@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We propose to develop an AI-powered blockchain-based mobile application that will help TVS Credit to assess the risk of borrowers more accurately. This app collects essential borrower data, such as credit scores, income, and debt-to-income ratios, alongside non-traditional data in the form of a personality assessment test to anticipate financial behavior and risk tolerance levels.
+We propose to develop an AI-powered blockchain-based mobile application that will help Bank to assess the risk of borrowers more accurately. This app collects essential borrower data, such as credit scores, income, and debt-to-income ratios, alongside non-traditional data in the form of a personality assessment test to anticipate financial behavior and risk tolerance levels.
 
 An advanced ML model is then employed to determine whether an applicant qualifies as a low-risk candidate based on both traditional and non-traditional data. Notably, all borrower information will be securely stored in a decentralized blockchain network, ensuring the utmost security and privacy.
 
